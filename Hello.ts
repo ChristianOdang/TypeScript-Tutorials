@@ -10,3 +10,5 @@ console.log(names)
 
 const schools: string[] = ['UofA', 'Fulafia', 'UNN', 'UI']
 console.log(schools)
+
+// Typed Array
