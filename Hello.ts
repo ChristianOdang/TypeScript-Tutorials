@@ -12,3 +12,29 @@ const schools: string[] = ['UofA', 'Fulafia', 'UNN', 'UI']
 console.log(schools)
 
 // Typed Array
+// A tuple is a typed array with a pre-defined length and types for each other
+// define our tuple
+let ourTuple: [number, boolean, string, number];
+ourTuple: [5, false, 'Coding is Good', 10];
+
+// TypeScript Object Types
+const car: { type: string, model: string, year: number } = {
+  type: "Toyota",
+  model: "Corrolla",
+  year: 2019
+};
+
+// TypeScript Enums
+// An enum is a special 'class' that represents a group of constants
+enum CardinalDirection {
+  North, East, South, West
+}
+let currentDirection = CardinalDirection.East;
+console.log(currentDirection)
+
+// Union type is used when the value can be more than a single type
+function printStatusCode(code: string | number) {
+  console.log(`My Status code is ${code}.`)
+}
+printStatusCode('404');
+printStatusCode(404)
