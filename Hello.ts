@@ -38,3 +38,31 @@ function printStatusCode(code: string | number) {
 }
 printStatusCode('404');
 printStatusCode(404)
+
+// TypeScript Function
+// Void Return type can be used to indicate a function that doesn't return any value
+function printHello(): void {
+  console.log("Hello World!")
+}
+
+// function parameter
+function multiply(a: number, b: number) {
+  return a * b;
+}
+
+// TypeScript Classes
+// TypeScript adds types and visibility modifiers to JavaScript Classes
+class Person {
+  private name: string;
+  
+  public constructor(name: string) {
+    this.name = name;
+  }
+
+  public getName(): string {
+    return this.name
+  }
+}
+
+const person = new Person("Johnny");
+console.log(person.getName());
